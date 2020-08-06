@@ -1,0 +1,2 @@
+@ECHO OFF
+START ../NAPS2.lnk

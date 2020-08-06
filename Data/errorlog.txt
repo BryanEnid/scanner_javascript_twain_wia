@@ -1,0 +1,526 @@
+2020-03-09 12:58:16.1722 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-09 13:45:38.5788 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-11 14:43:44.9729 An error occurred when trying to save the file. System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.ImportExport.Images.SaveImagesOperation.<>c__DisplayClass10_0.<<Start>b__1>d.MoveNext()
+2020-03-11 14:45:55.0022 An error occurred when trying to save the file. System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.ImportExport.Images.SaveImagesOperation.<>c__DisplayClass10_0.<<Start>b__1>d.MoveNext()
+2020-03-11 14:52:00.9110 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\App\1.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\App\1.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-11 22:22:59.4833 Error importing PDF file. System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-11 22:28:01.4775 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-11 22:29:57.5717 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-11 22:30:38.1861 An error occurred with the scanning driver. NAPS2.Scan.Wia.Native.WiaException: WIA error code 80072F78
+   at NAPS2.Scan.Wia.Native.WiaDeviceManager.FindDevice(String deviceID)
+   at NAPS2.Scan.Wia.WiaScanOperation.Scan(Concrete source)
+   at NAPS2.Scan.Wia.WiaScanOperation.<>c__DisplayClass26_0.<Start>b__0()
+2020-03-12 11:35:02.6121 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-12 11:35:07.1974 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-12 12:09:22.9235 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-12 13:05:31.9370 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-12 13:13:30.0302 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-12 23:45:51.3100 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-14 19:42:04.7419 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-14 19:57:55.3291 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-14 19:59:15.3766 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 17:50:50.1941 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 17:51:59.3189 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:04:12.4370 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:06:53.2789 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:07:23.7158 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:09:44.8060 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:10:50.4536 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-18 18:11:04.5581 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 00:47:52.7285 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 00:55:02.5831 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 01:04:16.5894 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 01:15:22.3645 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 01:30:35.6795 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 01:45:50.5217 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 09:55:00.7409 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-19 09:55:38.9230 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:05:04.9573 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:05:45.0964 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:05:48.9844 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:05:56.9548 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:22:57.9748 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-20 20:23:04.3945 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:37:37.9725 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:39:54.6532 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:39:59.2292 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:40:06.9238 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:41:23.7865 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:43:27.8905 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 17:46:57.9924 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:29:21.2115 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:33:18.9222 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:35:05.3540 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:35:27.9655 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:35:48.2893 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:37:46.4637 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 18:44:48.4175 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:47:02.5904 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:50:05.1201 Error importing PDF file. System.InvalidOperationException: The file is not a valid PDF document.
+   at PdfSharp.Pdf.IO.PdfReader.Open(Stream stream, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider passwordProvider)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:51:15.6675 Error importing PDF file. System.InvalidOperationException: The file is not a valid PDF document.
+   at PdfSharp.Pdf.IO.PdfReader.Open(Stream stream, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider passwordProvider)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:58:32.8528 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:59:12.9189 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 21:59:24.9930 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:01:50.1833 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:31:38.1771 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:38:09.7757 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:41:09.6480 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:41:12.5480 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:42:33.6872 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-21 22:42:45.2944 An error occurred with the scanning driver. NAPS2.Scan.Wia.Native.WiaException: WIA error code 800705B4
+   at NAPS2.Scan.Wia.Native.WiaDeviceManager.FindDevice(String deviceID)
+   at NAPS2.Scan.Wia.WiaScanOperation.Scan(Concrete source)
+   at NAPS2.Scan.Wia.WiaScanOperation.<>c__DisplayClass26_0.<Start>b__0()
+2020-03-21 22:42:46.1524 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 22:43:50.6118 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-21 22:44:02.9694 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-21 22:44:27.3270 Error closing TWAIN session System.InvalidOperationException: Message loop has not started yet.
+   at NTwain.Internals.InternalMessageLoopHook.Invoke(Action action)
+   at NTwain.TwainSession.Close()
+   at NAPS2.Scan.Twain.TwainWrapper.InternalGetDeviceList(TwainImpl twainImpl)
+2020-03-21 22:49:39.7552 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 23:07:29.6312 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-03-21 23:07:36.8346 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-07-29 01:15:30.0123 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\output.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-07-29 10:43:56.7847 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\$(n).pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\$(n).pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-07-29 10:44:41.0220 Error importing PDF file. System.IO.FileNotFoundException: Could not find file 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\$(n).pdf'.
+File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\$(n).pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at PdfSharp.Pdf.IO.PdfReader.Open(String path, String password, PdfDocumentOpenMode openmode, PdfPasswordProvider provider)
+   at NAPS2.ImportExport.Pdf.PdfSharpImporter.<>c__DisplayClass6_0.<<Import>b__0>d.MoveNext()
+2020-07-29 12:55:57.1294 Error importing image: ../Output/output$(n).jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+2020-07-29 12:55:57.1825 Error importing file. Path: ../Output/output$(n).jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.Automation.AutomatedScanning.<ImportImages>d__30.MoveNext()
+2020-08-06 08:24:30.1355 Error importing image: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+2020-08-06 08:24:30.1772 Error importing file. Path: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.Automation.AutomatedScanning.<ImportImages>d__30.MoveNext()
+2020-08-06 08:36:51.5638 Error importing image: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+2020-08-06 08:36:51.6010 Error importing file. Path: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.Automation.AutomatedScanning.<ImportImages>d__30.MoveNext()

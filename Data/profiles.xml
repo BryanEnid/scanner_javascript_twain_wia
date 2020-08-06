@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ArrayOfScanProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ScanProfile>
+    <Device>
+      <ID>{6BDD1FC6-810F-11D0-BEC7-08002BE2092F}\0000</ID>
+      <Name>EPSON4B6EF8 (ET-2750 Series)</Name>
+    </Device>
+    <DriverName>wia</DriverName>
+    <DisplayName>EPSON4B6EF8 (ET-2750 Series)</DisplayName>
+    <IconID>0</IconID>
+    <MaxQuality>false</MaxQuality>
+    <IsDefault>true</IsDefault>
+    <Version>2</Version>
+    <UseNativeUI>false</UseNativeUI>
+    <AfterScanScale>OneToOne</AfterScanScale>
+    <Brightness>0</Brightness>
+    <Contrast>0</Contrast>
+    <BitDepth>C24Bit</BitDepth>
+    <PageAlign>Right</PageAlign>
+    <PageSize>Letter</PageSize>
+    <Resolution>Dpi200</Resolution>
+    <PaperSource>Glass</PaperSource>
+    <EnableAutoSave>false</EnableAutoSave>
+    <AutoSaveSettings>
+      <FilePath>C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\1.pdf</FilePath>
+      <PromptForFilePath>true</PromptForFilePath>
+      <ClearImagesAfterSaving>true</ClearImagesAfterSaving>
+      <Separator>FilePerPage</Separator>
+    </AutoSaveSettings>
+    <Quality>75</Quality>
+    <AutoDeskew>false</AutoDeskew>
+    <BrightnessContrastAfterScan>false</BrightnessContrastAfterScan>
+    <ForcePageSize>false</ForcePageSize>
+    <ForcePageSizeCrop>false</ForcePageSizeCrop>
+    <TwainImpl>Default</TwainImpl>
+    <ExcludeBlankPages>false</ExcludeBlankPages>
+    <BlankPageWhiteThreshold>70</BlankPageWhiteThreshold>
+    <BlankPageCoverageThreshold>25</BlankPageCoverageThreshold>
+    <WiaOffsetWidth>false</WiaOffsetWidth>
+    <WiaRetryOnFailure>false</WiaRetryOnFailure>
+    <WiaDelayBetweenScans>false</WiaDelayBetweenScans>
+    <WiaDelayBetweenScansSeconds>2</WiaDelayBetweenScansSeconds>
+    <WiaVersion>Default</WiaVersion>
+    <FlipDuplexedPages>false</FlipDuplexedPages>
+  </ScanProfile>
+</ArrayOfScanProfile>
