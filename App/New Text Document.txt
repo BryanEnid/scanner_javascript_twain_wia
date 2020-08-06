@@ -1,2 +1,0 @@
-./NAPS2.Console.exe -o './output.pdf' --progress
- 
