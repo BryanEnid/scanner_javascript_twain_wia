@@ -7,7 +7,7 @@ const { exec } = require("child_process");
 let PORT = 3031;
 
 http
-  .createServer((req, res) => {
+  .createServer(async (req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-access-token");
@@ -15,56 +15,31 @@ http
 
     let { ui, document, image, scan } = url.parse(req.url, true).query;
 
-    // Erase old files before sending new files to CLIENT
-    path = pathModule.normalize("/Output/output");
-
-    if (req.headers["content-type"] !== "image/jpeg" && req.headers["content-type"] == "application/pdf") {
-      fs.removeSync(`${process.cwd()}/Output`);
-      fs.ensureDirSync(`${process.cwd()}/Output`);
-      console.log(fs.existsSync(pathModule.normalize(`${process.cwd()}/Output`)));
-      // fs.rmdirSync(`${process.cwd()}/Output`, { recursive: true });
-      // fs.unlink(`${process.cwd()}${path}.jpg`, (err) => {
-      //   if (err) {
-      //     console.error(err.message);
-      //     return;
-      //   }
-      //   console.log(`successfully deleted ${process.cwd()}${path}.jpg`);
-      // });
-      // fs.unlink(`${process.cwd()}${path}.pdf`, (err) => {
-      //   if (err) {
-      //     console.error(err.message);
-      //     return;
-      //   }
-      //   console.log(`successfully deleted ${process.cwd()}${path}.pdf`);
-      // });
-    }
-
     if (req.headers["content-type"] == "image/jpeg") {
-      console.log("image");
+      const files_names = await fs.readdir(pathModule.normalize(`${process.cwd()}/Output/`));
+      const jpg_file_names = files_names.filter((item) => item.includes("jpg"));
+
       try {
-        const jpg_file = fs.readFileSync(`${process.cwd()}${path}.jpg`);
+        const jpg_file = await fs.readFile(pathModule.normalize(`${process.cwd()}/Output/${jpg_file_names[0]}`));
         res.setHeader("Content-Type", "image/jpeg");
         res.writeHead(200);
         res.end(jpg_file, "binary");
         return;
       } catch (err) {
-        console.log("error image");
-        // console.error(err.message);
+        console.error(err.message);
         res.writeHead(202, "Process was interrupted, please try again");
         res.end();
         return;
       }
     } else if (req.headers["content-type"] == "application/pdf" || document == "true") {
-      console.log("pdf");
       try {
         res.setHeader("Content-Type", "application/pdf");
-        let doc = fs.readFileSync(`${process.cwd()}${path}.pdf`);
+        let doc = await fs.readFile(pathModule.normalize(`${process.cwd()}/Output/output.pdf`));
         res.writeHead(200);
         res.end(doc, "binary");
         return;
       } catch (err) {
-        console.log("error pdf");
-        // console.error(err.message);
+        console.error(err.message);
         res.writeHead(202, "Process was interrupted, please try again");
         res.end();
         return;
@@ -72,14 +47,14 @@ http
     }
 
     if (ui == "true") {
-      console.log("running scanner UI (Options)");
+      console.log(`Scanner UI (Options)- ${new Date().toLocaleTimeString()} : ${new Date().toLocaleDateString()} `);
       exec("cd commands && settings.bat", (err, stdout, stderr) => {
         res.writeHead(204);
         res.end();
         return;
       });
     } else if (ui == "false" && scan == "true") {
-      console.log("running scanner");
+      console.log(`Running Scanner - ${new Date().toLocaleTimeString()} : ${new Date().toLocaleDateString()} `);
       exec("cd commands && start.bat", (err, stdout, stderr) => {
         if (err) {
           console.error(err.message);

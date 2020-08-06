@@ -1,3 +1,4 @@
-@RD /S /Q "D:\PHP_Projects\testproject\Release\testfolder"
+@RD /S /Q "../Output"
+MKDIR "../Output"
 
 START /MIN scan.bat

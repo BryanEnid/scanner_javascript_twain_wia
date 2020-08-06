@@ -524,3 +524,12 @@ File name: 'C:\Users\Bryan\Escritorio\Coding\emen\scanner\Output\$(n).pdf'
    at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
    at NAPS2.Automation.AutomatedScanning.<ImportImages>d__30.MoveNext()
+2020-08-06 09:22:23.9189 Error importing image: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+2020-08-06 09:22:23.9576 Error importing file. Path: ../Output/output.jpg System.ArgumentException: Parameter is not valid.
+   at System.Drawing.Bitmap..ctor(String filename)
+   at NAPS2.ImportExport.Images.ImageImporter.<>c__DisplayClass2_0.<Import>b__0()
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   at NAPS2.Automation.AutomatedScanning.<ImportImages>d__30.MoveNext()
