@@ -2,3 +2,6 @@ node_modules/
 App/
 dont touch/
 Server-win.exe
+server-linux
+server-macos
+server-win.exe
