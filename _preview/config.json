@@ -1,0 +1,15 @@
+{
+  "name": "Contractor App",
+  "image_names": ["preview1.png"],
+  "technologies": [
+    { "name": "React.js", "colors": ["#20232a", "#61dafb"] },
+    { "name": "React Native", "colors": ["#61dafb", "#20232a"] },
+    { "name": "MongoDB", "colors": ["#413020", "#76b662"] },
+    { "name": "Node.js", "colors": ["#333333", "#8cc64c"] },
+    { "name": "Express.js", "colors": ["black", "white"] }
+  ],
+  "APIs": ["Google Maps API (Maps, Places & Geolocation)"],
+  "others": ["Styled Components", "Pusher", "Expo", "React Navigation", "Babel", "Axios"],
+  "app_type": "mobile",
+  "company": "Ivbaze Tech Development"
+}
