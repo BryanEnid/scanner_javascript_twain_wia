@@ -1,6 +1,6 @@
 {
   "name": "Scanner App TWAIN / WIA",
-  "image_names": ["preview1.png"],
+  "image_names": [""],
   "technologies": [{ "name": "Node.js", "colors": ["#333333", "#8cc64c"] }],
   "APIs": [""],
   "others": ["pkg"],
