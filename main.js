@@ -20,13 +20,13 @@ http
     // HTTP request is asking for a image
     if (req.headers["content-type"] == "image/jpeg") {
       // Get a list of the file names in "/Output" folder
-      const files_names = await fs.readdir(pathModule.normalize(`${process.cwd()}/Output/`));
+      const files_names = fs.readdirSync(pathModule.normalize(`${process.cwd()}/Output/`));
       // Filter files other than .jpf files
       const jpg_file_names = files_names.filter((item) => item.includes("jpg"));
 
       try {
         // Send the first jpg file in "/Output" folder
-        const jpg_file = await fs.readFile(pathModule.normalize(`${process.cwd()}/Output/${jpg_file_names[0]}`));
+        const jpg_file = fs.readFileSync(pathModule.normalize(`${process.cwd()}/Output/${jpg_file_names[0]}`));
         res.setHeader("Content-Type", "image/jpeg");
         res.writeHead(200);
         // It need to be binary so you can parse it as a blob object (https://developer.mozilla.org/en-US/docs/Web/API/Body/blob)
@@ -43,7 +43,7 @@ http
     else if (req.headers["content-type"] == "application/pdf" || document == "true") {
       try {
         // Send the Output.pdf file from "/Output" folder
-        let doc = await fs.readFile(pathModule.normalize(`${process.cwd()}/Output/output.pdf`));
+        let doc = fs.readFileSync(pathModule.normalize(`${process.cwd()}/Output/output.pdf`));
         res.setHeader("Content-Type", "application/pdf");
         res.writeHead(200);
         // It need to be binary so you can parse it as a blob object (https://developer.mozilla.org/en-US/docs/Web/API/Body/blob)

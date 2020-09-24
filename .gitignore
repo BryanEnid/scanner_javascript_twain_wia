@@ -1,4 +1,6 @@
 node_modules/
+Data/
+Output/
 App/
 dont touch/
 Server-win.exe
